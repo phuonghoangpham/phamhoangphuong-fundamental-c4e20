@@ -1,25 +1,22 @@
+
 from turtle import *
 
-shape('turtle')
-color('red')
+speed (-1)
+shape("classic")
 
-for i in range(4):
-    forward(100)
-    left(90)
-for j in range(6):
-    forward(100)
-    left(60)
-
-color('blue')
-left(60)
-forward(100)
-right(120)
-forward(100)
-left(135)
-forward(100)
-for x in range(3):
-    left(72)
-    forward(100)
-
-
+for i in range (3, 7):
+    angle = 360/i
+    if i % 2 == 1:
+        color("blue")
+        for j in range(i):
+            forward(100)
+            left(angle)
+                    
+    else:
+        color("red")
+        for n in range(i):
+            forward(100)
+            left(angle)
+        
+exitonclick()
 mainloop()
